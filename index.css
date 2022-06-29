@@ -1,0 +1,227 @@
+/* Iteration-1: Override the web page styles by giving margin and padding as 0px */
+
+/* Iteration-2 : Implement the cascade property such that body gets #fff color and change font family to  Arial, sans-serif */
+
+body {
+  background-color: red;
+}
+
+/* Iteration-3: Implement Specificity property for the h1 and change the text color to #fff  */
+
+h1 {
+  color: red;
+}
+
+.str {
+  color: green;
+}
+
+/* Iteration-4 : Implement the Inheritance property for strong class so that it can inherit text color from parent  */
+
+.high-2 {
+  color: blue;
+  background-color: yellow;
+}
+
+/* Iteration-5: Select the class high-2 and set its color property to the value which is established in a previous cascade layer. */
+
+p {
+  margin: 10px 0;
+  color: black;
+}
+
+.potential {
+  color: blue;
+}
+
+.high-1 {
+  color: #fff;
+  background-color: red;
+  /* Iteration-6:set the background color property such that it Resets the property value to the browser's default styling and then make its text color to black
+  */
+}
+
+.high {
+  color: #fff;
+  background-color: red;
+  /* Iteration-7: set color property such that it gets its initial color what it had before */
+}
+
+.container {
+  width: 940px;
+  overflow: auto;
+  margin: auto;
+}
+
+header {
+  background: #5e6482;
+  height: 70px;
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.high-3 {
+  color: brown;
+  background-color: lightcyan;
+}
+
+/* Iteration-8:  select the class high-3 and set its background-color property so that it Resets the property to its natural value*/
+
+/* Styling the timeline */
+
+#timeline {
+  background: url(https://github.com/SUBstylee/CSS-projects/blob/master/05-timeline/img/line.png?raw=true)
+    repeat-y 50% 0;
+  min-height: 700px;
+  margin: 20px 0;
+  padding-top: 10px;
+}
+
+.tl-block {
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  /*   Iteration-9 : Make the margin bottom of tl-block to 20px and give it a special property so that any other property wont override it */
+
+  margin-bottom: 20px !important;
+}
+
+.tl-block {
+  margin-bottom: 90px;
+}
+
+/* Styling the Year */
+
+.tl-year {
+  background: url(https://github.com/SUBstylee/CSS-projects/blob/master/05-timeline/img/point-big.png?raw=true)
+    no-repeat 50% 0;
+  display: block;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.tl-year div {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.tl-event {
+  background: url(https://github.com/SUBstylee/CSS-projects/blob/master/05-timeline/img/point-small.png?raw=true)
+    no-repeat 50% 0;
+  margin: auto;
+  width: 100%;
+  overflow: hidden;
+  visibility: visible;
+  animation: fade;
+  animation-duration: 3s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Styling the Events */
+
+.tl-event > div {
+  width: 45%;
+  position: relative;
+}
+
+.tl-event div div {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.tl-event div.event-r {
+  float: right;
+  background: url(https://github.com/SUBstylee/CSS-projects/blob/master/05-timeline/img/arrow-left.png?raw=true)
+    no-repeat 0 0;
+}
+
+.tl-event div.event-l {
+  float: left;
+  background: url(https://github.com/SUBstylee/CSS-projects/blob/master/05-timeline/img/arrow-right.png?raw=true)
+    no-repeat top right;
+}
+
+.tl-event div.event-r div {
+  margin-left: 20px;
+}
+
+.tl-event div.event-l div {
+  margin-right: 20px;
+}
+
+.tl-event time {
+  background: #c03b44;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Styling the footer */
+
+/* Iteration-10: apply inline css for the for the body background color to #fff
+  */
+
+footer {
+  background: #5e6482;
+  height: 40px;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+  header {
+    height: 50px;
+  }
+  h1 {
+    font-size: 23px;
+  }
+  #timeline {
+    background: url(https://github.com/SUBstylee/CSS-projects/blob/master/05-timeline/img/line.png?raw=true)
+      repeat-y 30px 0;
+  }
+  .tl-year {
+    background: url(https://github.com/SUBstylee/CSS-projects/blob/master/05-timeline/img/point-big.png?raw=true)
+      no-repeat 0 0;
+    text-align: left;
+    margin: 0;
+  }
+  .tl-event {
+    background: url(https://github.com/SUBstylee/CSS-projects/blob/master/05-timeline/img/point-small.png?raw=true)
+      no-repeat 16px 0;
+  }
+  .tl-event div {
+    width: 85%;
+    position: relative;
+  }
+  .tl-event div.event-l {
+    float: right;
+    background: url(https://github.com/SUBstylee/CSS-projects/blob/master/05-timeline/img/arrow-left.png?raw=true)
+      no-repeat 0 0;
+  }
+  .tl-event div.event-l div {
+    margin-left: 20px;
+    margin-right: 0;
+  }
+}
